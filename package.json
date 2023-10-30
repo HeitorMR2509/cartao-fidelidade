@@ -1,0 +1,43 @@
+{
+  "name": "cartao-pontuacao",
+  "version": "1.0.0",
+  "description": "Sistema de pontuação de cartão por ID.",
+  "main": "index.js",
+  "scripts": {
+    "tw": "npx tailwindcss -i ./src/global.css -o ./assets/css/tw-styles.css --watch --minify",
+    "dev": "nodemon index.js",
+    "build": "pkg . -C GZip"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "assets/**/*",
+      "node_modules/sqlite3/lib/binding/napi-v6-win32-unknown-x64"
+    ],
+    "scripts": [
+      "src/**/*.js"
+    ],
+    "targets": [
+      "node18-win-x64",
+      "node12-win-x64"
+    ],
+    "outputPath": "./dist"
+  },
+  "keywords": [],
+  "author": "HeitorMR2509",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "tailwindcss": "^3.2.6"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "sequelize": "^6.28.0",
+    "sqlite3": "^5.1.4"
+  }
+}

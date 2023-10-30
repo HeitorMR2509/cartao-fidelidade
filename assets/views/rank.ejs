@@ -1,0 +1,23 @@
+<% layout('base/base') %>
+
+<div class="flex-1 flex mb-20 mt-10">
+  <div
+    class="flex-1 flex flex-col bg-body-background dark:bg-body-background-dark rounded-md border border-black/20 dark:border-black/30 shadow-md overflow-hidden"
+  >
+    <div class="py-5">
+      <h1 class="text-center text-6xl">Rank</h1>
+    </div>
+    <hr />
+    <div>
+      <% rankCard.forEach(function(cartao){ %>
+      <a
+        href="/cartao?cardid=<%= cartao.cardId %>"
+        class="w-full inline-flex justify-between p-2 hover:bg-gray-400/20"
+      >
+        <span><%= cartao.nome %> - <%= cartao.cardId %></span>
+        <span><%= cartao.pontuacao %></span>
+      </a>
+      <% }); %>
+    </div>
+  </div>
+</div>

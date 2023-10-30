@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Heitor Moura Rosi aka HeitorGamer 2509" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+    <link rel="preload" href="/scripts/theme.js" as="script" />
+    <link rel="preload" href="/css/theme-toggler.css" as="style" />
+    <link rel="preload" href="/scripts/theme-toggler.js" as="script" />
+    <link rel="preload" href="/css/tw-styles.css" as="style" />
+    <link rel="preload" href="/css/swup.css" as="style" />
+    <link rel="preload" href="/scripts/swup.js" as="script" />
+    <link rel="preload" href="/scripts/swup-formplugin.js" as="script" />
+    <link rel="stylesheet" href="/css/tw-styles.css" />
+    <link rel="stylesheet" href="/css/theme-toggler.css" />
+    <script src="/scripts/theme.js"></script>
+    <script src="/scripts/theme-toggler.js" defer></script>
+    <script src="/scripts/swup-formplugin.js"></script>
+    <script src="/scripts/swup.js" defer></script>
+    <script src="/scripts/pgt-formplugin.js" defer></script>
+    <link rel="stylesheet" href="/css/swup.css" />
+    <script src="/scripts/returnB.js" defer></script>
+    <script src="/scripts/cartao.js" defer></script>
+  </head>
+  <body
+    class="min-h-screen min-w-full bg-body-background text-body-text flex flex-col dark:bg-body-background-dark dark:text-body-text-dark"
+  >
+    <%- include("../components/header") -%>
+    <main
+      id="swup"
+      class="flex-1 flex flex-col transition-fade max-w-3xl mx-auto w-full p-5"
+    >
+      <%- body -%>
+    </main>
+  </body>
+</html>

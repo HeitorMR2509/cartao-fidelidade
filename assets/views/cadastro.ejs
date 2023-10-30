@@ -1,0 +1,83 @@
+<% layout('base/base') %>
+
+<div class="flex-1 flex">
+    <div class="flex-1">
+        <form action="/cartoes/cadastrar" method="post" class="flex flex-col gap-2">
+            <div>
+                <h1 class="text-3xl font-semibold">Cadastro</h1>
+            </div>
+            <hr />
+            <div class="flex flex-col gap-3">
+                <div>
+                    <div class="relative h-10 w-full">
+                        <input
+                          class="peer h-full w-full rounded-[7px] border dark:text-body-text-dark border-gray-200 dark:border-gray-600 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-200 placeholder-shown:border-t-gray-200 placeholder-shown:dark:border-t-gray-600 focus:border-1 focus:border-gray-400 focus:dark:border-gray-600 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-gray-50"
+                          placeholder=" "
+                          name="cardid"
+                          autocomplete="off"
+                          required
+                        />
+                        <label
+                          class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 peer-focus:before:border-t-1 before:border-gray-200 dark:before:border-gray-600 flex h-full w-full select-none text-[11px] font-normal leading-tight text-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-gray-200 dark:after:border-gray-600 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-gray-400 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-body-text dark:peer-focus:text-body-text-dark peer-focus:before:border-l-1 peer-focus:before:border-gray-400 dark:peer-focus:before:border-gray-600 peer-focus:after:border-t-1 peer-focus:after:border-r-1 peer-focus:after:border-gray-400 dark:peer-focus:after:border-gray-600 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-gray-400"
+                        >
+                          ID do cartão<span class="text-red-500">*</span>
+                        </label>
+                       
+                      </div>
+                </div>
+                <div>
+                    <div class="relative h-10 w-full">
+                        <input
+                          class="peer h-full w-full rounded-[7px] border dark:text-body-text-dark border-gray-200 dark:border-gray-600 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-200 placeholder-shown:border-t-gray-200 placeholder-shown:dark:border-t-gray-600 focus:border-1 focus:border-gray-400 focus:dark:border-gray-600 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-gray-50"
+                          placeholder=" "
+                          name="name"
+                          autocomplete="off"
+                          required
+                        />
+                        <label
+                          class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 peer-focus:before:border-t-1 before:border-gray-200 dark:before:border-gray-600 flex h-full w-full select-none text-[11px] font-normal leading-tight text-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-gray-200 dark:after:border-gray-600 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-gray-400 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-body-text dark:peer-focus:text-body-text-dark peer-focus:before:border-l-1 peer-focus:before:border-gray-400 dark:peer-focus:before:border-gray-600 peer-focus:after:border-t-1 peer-focus:after:border-r-1 peer-focus:after:border-gray-400 dark:peer-focus:after:border-gray-600 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-gray-400"
+                        >
+                          Nome<span class="text-red-500">*</span>
+                        </label>
+                       
+                      </div>
+                </div>
+                <div>
+                    <div class="relative h-10 w-full">
+                        <input
+                          class="peer h-full w-full rounded-[7px] border dark:text-body-text-dark border-gray-200 dark:border-gray-600 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-200 placeholder-shown:border-t-gray-200 placeholder-shown:dark:border-t-gray-600 focus:border-1 focus:border-gray-400 focus:dark:border-gray-600 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-gray-50"
+                          placeholder=" "
+                          name="cpf"
+                          autocomplete="off"
+                        />
+                        <label
+                          class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 peer-focus:before:border-t-1 before:border-gray-200 dark:before:border-gray-600 flex h-full w-full select-none text-[11px] font-normal leading-tight text-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-gray-200 dark:after:border-gray-600 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-gray-400 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-body-text dark:peer-focus:text-body-text-dark peer-focus:before:border-l-1 peer-focus:before:border-gray-400 dark:peer-focus:before:border-gray-600 peer-focus:after:border-t-1 peer-focus:after:border-r-1 peer-focus:after:border-gray-400 dark:peer-focus:after:border-gray-600 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-gray-400"
+                        >
+                          CPF
+                        </label>
+                       
+                      </div>
+                </div>
+                <div>
+                    <div class="relative h-10 w-full">
+                        <input
+                          class="peer h-full w-full rounded-[7px] border dark:text-body-text-dark border-gray-200 dark:border-gray-600 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-gray-200 placeholder-shown:border-t-gray-200 placeholder-shown:dark:border-t-gray-600 focus:border-1 focus:border-gray-400 focus:dark:border-gray-600 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-gray-50"
+                          placeholder=" "
+                          name="telefone"
+                          autocomplete="off"
+                        />
+                        <label
+                          class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 peer-focus:before:border-t-1 before:border-gray-200 dark:before:border-gray-600 flex h-full w-full select-none text-[11px] font-normal leading-tight text-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-gray-200 dark:after:border-gray-600 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-gray-400 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-body-text dark:peer-focus:text-body-text-dark peer-focus:before:border-l-1 peer-focus:before:border-gray-400 dark:peer-focus:before:border-gray-600 peer-focus:after:border-t-1 peer-focus:after:border-r-1 peer-focus:after:border-gray-400 dark:peer-focus:after:border-gray-600 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-gray-400"
+                        >
+                          Telefone
+                        </label>
+                       
+                      </div>
+                </div>
+                <div>
+                    <button type="submit" class="py-2 px-3 border border-gray-400/50 dark:border-black/20 hover:bg-gray-400/20 rounded-md">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

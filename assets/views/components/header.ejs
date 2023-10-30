@@ -1,0 +1,30 @@
+<header class="bg-header-background p-5 lg:px-0">
+  <div class="max-w-3xl mx-auto w-full flex items-center justify-between">
+    <div>
+      <a href="/" class="flex gap-2 group">
+        <img
+          src="/favicon.png"
+          alt="Shortcut Image"
+          class="group-hover:scale-105"
+        />
+        <span class="text-xl font-semibold text-white/90 hover:text-white"
+          >Cartão Fidelidade</span
+        >
+      </a>
+    </div>
+    <div class="flex gap-5 items-center">
+      <div>
+        <ul class="flex gap-5">
+          <% routes.map(function(route){ %>
+          <li>
+            <a href="<%= route.path %>" class="hover:text-white text-white/80"
+              ><%= route.title %></a
+            >
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+      <div><%- include("./themeToggler") -%></div>
+    </div>
+  </div>
+</header>
